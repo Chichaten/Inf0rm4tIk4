@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <title>Ch1ch4_0xA | Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=5" />
+</head>
+<body>
+  <canvas id="particles"></canvas>
+
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-brand">
+      <span class="brand-bracket">[</span>Ch1ch4<span class="brand-accent">_0xA</span><span class="brand-bracket">]</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-hero">
+    <h1 class="page-title reveal">My <span class="accent">Projects</span></h1>
+    <p class="page-sub reveal">Tools built &bull; Challenges solved &bull; Research shared</p>
+  </section>
+
+  <section class="projects-section">
+    <div class="container">
+      <div class="projects-grid">
+
+        <div class="project-card glass reveal" data-tilt>
+          <div class="project-top">
+            <div class="project-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <span class="project-badge">Security</span>
+          </div>
+          <h3>VulnScanner</h3>
+          <p>Automated web vulnerability scanner with customizable payloads, session handling, and PDF reporting.</p>
+          <div class="project-stack">
+            <span>Python</span><span>Flask</span><span>SQLite</span>
+          </div>
+          <a href="#" class="btn btn-ghost btn-sm">View Source</a>
+        </div>
+
+        <div class="project-card glass reveal" data-tilt>
+          <div class="project-top">
+            <div class="project-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            </div>
+            <span class="project-badge">Forensics</span>
+          </div>
+          <h3>MemHunter</h3>
+          <p>Memory forensics toolkit for automated artifact extraction and IOC detection from RAM dumps.</p>
+          <div class="project-stack">
+            <span>Python</span><span>Volatility</span><span>YARA</span>
+          </div>
+          <a href="#" class="btn btn-ghost btn-sm">View Source</a>
+        </div>
+
+        <div class="project-card glass reveal" data-tilt>
+          <div class="project-top">
+            <div class="project-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <span class="project-badge">SIEM</span>
+          </div>
+          <h3>SigmaForge</h3>
+          <p>Sigma rule generator and validator with auto-conversion to Splunk SPL and ELK query DSL.</p>
+          <div class="project-stack">
+            <span>Python</span><span>YAML</span><span>Sigma</span>
+          </div>
+          <a href="#" class="btn btn-ghost btn-sm">View Source</a>
+        </div>
+
+        <div class="project-card glass reveal" data-tilt>
+          <div class="project-top">
+            <div class="project-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <span class="project-badge">CTF</span>
+          </div>
+          <h3>CTF Writeups</h3>
+          <p>Detailed writeups from competitions covering pwn, crypto, reversing, and web exploitation.</p>
+          <div class="project-stack">
+            <span>Markdown</span><span>Python</span><span>Assembly</span>
+          </div>
+          <a href="#" class="btn btn-ghost btn-sm">Read More</a>
+        </div>
+
+        <div class="project-card glass reveal" data-tilt>
+          <div class="project-top">
+            <div class="project-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <span class="project-badge">Automation</span>
+          </div>
+          <h3>ReconBot</h3>
+          <p>OSINT reconnaissance framework for automated data collection from multiple intelligence sources.</p>
+          <div class="project-stack">
+            <span>Python</span><span>APIs</span><span>Docker</span>
+          </div>
+          <a href="#" class="btn btn-ghost btn-sm">View Source</a>
+        </div>
+
+        <div class="project-card glass reveal" data-tilt>
+          <div class="project-top">
+            <div class="project-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <span class="project-badge">Network</span>
+          </div>
+          <h3>PacketPulse</h3>
+          <p>Real-time network traffic analyzer with protocol decoding, anomaly detection, and PCAP export.</p>
+          <div class="project-stack">
+            <span>C</span><span>libpcap</span><span>ncurses</span>
+          </div>
+          <a href="#" class="btn btn-ghost btn-sm">View Source</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Ch1ch4_0xA</p>
+    </div>
+  </footer>
+
+  <script src="script.js?v=5"></script>
+</body>
+</html>

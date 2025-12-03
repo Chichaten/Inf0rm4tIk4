@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <title>Ch1ch4_0xA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=5" />
+</head>
+<body>
+  <canvas id="particles"></canvas>
+
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-brand">
+      <span class="brand-bracket">[</span>Ch1ch4<span class="brand-accent">_0xA</span><span class="brand-bracket">]</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-badge reveal">Blue Team Operator &bull; DFIR Analyst</div>
+      <img src="forensic_abstract_logo_1772784659323.png" alt="Ch1ch4_0xA Logo" class="hero-logo reveal" />
+      <h1 class="hero-title reveal">Ch1ch4<span class="accent">_0xA</span></h1>
+      <div class="hero-terminal reveal">
+        <div class="terminal-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">zsh &mdash; analyst@soc</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="prompt">$</span> <span class="cmd" id="terminalCmd"></span><span class="cursor">|</span></p>
+        </div>
+      </div>
+      <div class="hero-actions reveal">
+        <a href="projects.html" class="btn btn-fill">View Projects</a>
+        <a href="about.html" class="btn btn-ghost">About Me</a>
+      </div>
+    </div>
+    <div class="scroll-cue">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card glass reveal">
+          <span class="stat-number" data-target="50">0</span>+
+          <span class="stat-label">Incidents Handled</span>
+        </div>
+        <div class="stat-card glass reveal">
+          <span class="stat-number" data-target="30">0</span>+
+          <span class="stat-label">Forensic Cases</span>
+        </div>
+        <div class="stat-card glass reveal">
+          <span class="stat-number" data-target="15">0</span>+
+          <span class="stat-label">Tools Built</span>
+        </div>
+        <div class="stat-card glass reveal">
+          <span class="stat-number" data-target="20">0</span>+
+          <span class="stat-label">CTFs Competed</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services-section">
+    <div class="container">
+      <h2 class="section-heading reveal">
+        <span class="heading-tag">&lt;expertise&gt;</span>
+      </h2>
+      <div class="cards-grid">
+        <div class="flip-card reveal" data-tilt>
+          <div class="flip-inner">
+            <div class="flip-front glass">
+              <div class="card-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <h3>SOC Operations</h3>
+              <p>24/7 monitoring, alert triage, threat hunting across SIEM &amp; EDR platforms</p>
+            </div>
+            <div class="flip-back glass">
+              <h4>Tools &amp; Platforms</h4>
+              <ul>
+                <li>Splunk / ELK Stack</li>
+                <li>CrowdStrike / SentinelOne</li>
+                <li>MITRE ATT&CK Framework</li>
+                <li>Sigma / YARA Rules</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card reveal" data-tilt>
+          <div class="flip-inner">
+            <div class="flip-front glass">
+              <div class="card-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+              </div>
+              <h3>Digital Forensics</h3>
+              <p>Disk imaging, memory analysis, artifact extraction &amp; timeline reconstruction</p>
+            </div>
+            <div class="flip-back glass">
+              <h4>Tools &amp; Techniques</h4>
+              <ul>
+                <li>Volatility / Rekall</li>
+                <li>Autopsy / FTK Imager</li>
+                <li>Velociraptor</li>
+                <li>Chain of Custody</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card reveal" data-tilt>
+          <div class="flip-inner">
+            <div class="flip-front glass">
+              <div class="card-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <h3>Incident Response</h3>
+              <p>Containment, eradication, recovery &amp; post-incident analysis</p>
+            </div>
+            <div class="flip-back glass">
+              <h4>Methodologies</h4>
+              <ul>
+                <li>NIST SP 800-61</li>
+                <li>Playbook Automation</li>
+                <li>Malware Triage</li>
+                <li>Root Cause Analysis</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="cards-hint reveal">Hover or tap cards to flip</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Ch1ch4_0xA</p>
+    </div>
+  </footer>
+
+  <script src="script.js?v=5"></script>
+</body>
+</html>
